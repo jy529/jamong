@@ -21,10 +21,13 @@ def read_single_digit(N):
         return "구"
     else:
         return "잘못된 입력"
+    
+def read_number():
+    first = int(num[0])  
+    second = int(num[1])
+    third = int(num[2])
+    print(read_single_digit(first), read_single_digit(second), read_single_digit(third))
+
 
 num = input('세 자리 정수 입력: ')
-
-first = int(num[0])  
-second = int(num[1])  
-third = int(num[2])   
-print(read_single_digit(first), read_single_digit(second), read_single_digit(third))
+read_number()
